@@ -1,0 +1,26 @@
+{
+  "method": "HOG + KNN",
+  "k": 5,
+  "training_time_seconds": 43.376662800088525,
+  "stored_training_samples": 1663,
+  "feature_representation_size": 8100,
+  "class_names": [
+    "Oak",
+    "Dark Oak",
+    "Pale Oak",
+    "Spruce",
+    "Poplar",
+    "Cherry"
+  ],
+  "species_names": [
+    "quercus robur",
+    "quercus alba",
+    "quercus velutina",
+    "quercus rubra",
+    "picea abies",
+    "populus tremuloides",
+    "prunus yedoensis",
+    "prunus subhirtella"
+  ],
+  "model_path": "weights\\hog_knn.npz"
+}

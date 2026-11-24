@@ -1,0 +1,25 @@
+species,split,count
+quercus robur,train,200
+quercus robur,val,42
+quercus robur,test,44
+quercus alba,train,242
+quercus alba,val,51
+quercus alba,test,53
+quercus velutina,train,237
+quercus velutina,val,51
+quercus velutina,test,52
+quercus rubra,train,95
+quercus rubra,val,20
+quercus rubra,test,22
+picea abies,train,235
+picea abies,val,50
+picea abies,test,51
+populus tremuloides,train,225
+populus tremuloides,val,48
+populus tremuloides,test,49
+prunus yedoensis,train,191
+prunus yedoensis,val,41
+prunus yedoensis,test,42
+prunus subhirtella,train,233
+prunus subhirtella,val,50
+prunus subhirtella,test,51

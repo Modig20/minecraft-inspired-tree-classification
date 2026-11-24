@@ -1,0 +1,244 @@
+{
+  "class_names": [
+    "Oak",
+    "Dark Oak",
+    "Pale Oak",
+    "Spruce",
+    "Poplar",
+    "Cherry"
+  ],
+  "species_names": [
+    "quercus robur",
+    "quercus alba",
+    "quercus velutina",
+    "quercus rubra",
+    "picea abies",
+    "populus tremuloides",
+    "prunus yedoensis",
+    "prunus subhirtella"
+  ],
+  "prediction_type": "multi-label categories",
+  "models": [
+    {
+      "model": "HOG + KNN",
+      "accuracy": 0.6428571428571429,
+      "precision": 0.7242076642318984,
+      "recall": 0.6546762589928058,
+      "f1_score": 0.6703510695347356,
+      "training_time_seconds": 43.376662800088525,
+      "parameter_count": null,
+      "stored_training_samples": 1663,
+      "feature_representation_size": 8100,
+      "prediction_time_per_image_seconds": 0.0635508826919729
+    },
+    {
+      "model": "Custom CNN",
+      "accuracy": 0.5192307692307693,
+      "precision": 0.6066840318867094,
+      "recall": 0.9016786570743405,
+      "f1_score": 0.7105534377396343,
+      "training_time_seconds": 1206.8922059999313,
+      "parameter_count": 1700678,
+      "prediction_time_per_image_seconds": 0.013583274450086589
+    },
+    {
+      "model": "MobileNetV3-Small",
+      "accuracy": 0.6868131868131868,
+      "precision": 0.7609926493826218,
+      "recall": 0.9688249400479616,
+      "f1_score": 0.8398393882230837,
+      "training_time_seconds": 281.38325479999185,
+      "parameter_count": 1524006,
+      "prediction_time_per_image_seconds": 0.015245578571601392,
+      "weights_source": "torchvision pretrained ImageNet weights; final feature blocks and classifier fine-tuned"
+    }
+  ],
+  "confusion_matrices": {
+    "HOG + KNN": {
+      "Oak": [
+        [
+          261,
+          6
+        ],
+        [
+          38,
+          59
+        ]
+      ],
+      "Dark Oak": [
+        [
+          224,
+          66
+        ],
+        [
+          17,
+          57
+        ]
+      ],
+      "Pale Oak": [
+        [
+          302,
+          9
+        ],
+        [
+          19,
+          34
+        ]
+      ],
+      "Spruce": [
+        [
+          287,
+          26
+        ],
+        [
+          13,
+          38
+        ]
+      ],
+      "Poplar": [
+        [
+          305,
+          10
+        ],
+        [
+          24,
+          25
+        ]
+      ],
+      "Cherry": [
+        [
+          254,
+          17
+        ],
+        [
+          33,
+          60
+        ]
+      ]
+    },
+    "Custom CNN": {
+      "Oak": [
+        [
+          187,
+          80
+        ],
+        [
+          7,
+          90
+        ]
+      ],
+      "Dark Oak": [
+        [
+          267,
+          23
+        ],
+        [
+          5,
+          69
+        ]
+      ],
+      "Pale Oak": [
+        [
+          234,
+          77
+        ],
+        [
+          3,
+          50
+        ]
+      ],
+      "Spruce": [
+        [
+          276,
+          37
+        ],
+        [
+          0,
+          51
+        ]
+      ],
+      "Poplar": [
+        [
+          259,
+          56
+        ],
+        [
+          8,
+          41
+        ]
+      ],
+      "Cherry": [
+        [
+          253,
+          18
+        ],
+        [
+          18,
+          75
+        ]
+      ]
+    },
+    "MobileNetV3-Small": {
+      "Oak": [
+        [
+          245,
+          22
+        ],
+        [
+          5,
+          92
+        ]
+      ],
+      "Dark Oak": [
+        [
+          282,
+          8
+        ],
+        [
+          2,
+          72
+        ]
+      ],
+      "Pale Oak": [
+        [
+          271,
+          40
+        ],
+        [
+          1,
+          52
+        ]
+      ],
+      "Spruce": [
+        [
+          278,
+          35
+        ],
+        [
+          0,
+          51
+        ]
+      ],
+      "Poplar": [
+        [
+          265,
+          50
+        ],
+        [
+          0,
+          49
+        ]
+      ],
+      "Cherry": [
+        [
+          266,
+          5
+        ],
+        [
+          5,
+          88
+        ]
+      ]
+    }
+  }
+}
